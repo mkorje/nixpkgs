@@ -124,6 +124,7 @@ python3Packages.buildPythonApplication rec {
   dontBuild = true;
 
   dependencies = with python3Packages; [
+    grpcio
     # docker/main/requirements.txt
     scikit-build
     # docker/main/requirements-wheel.txt
